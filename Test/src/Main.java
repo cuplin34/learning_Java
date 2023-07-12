@@ -7,9 +7,10 @@ public class Main {
         calcScore(score, roundsPlayed);
     }
 
-    public static void calcScore(int score, int roundsPlayed){
+    public static int calcScore(int score, int roundsPlayed){
         int bonus = 150;
         int finalScore = score + (roundsPlayed * bonus);
         System.out.println("Wow you scored " + finalScore + " points");
+        return finalScore;
     }
 }
