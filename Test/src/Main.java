@@ -22,7 +22,7 @@ public class Main {
         if (minutes >= 60 || seconds >= 60){
             interimSeconds = seconds /60;
             minutes += interimSeconds;
-            seconds -= interimSeconds * 60;
+            seconds = seconds % 60;
             hours = (minutes / 60);
             minutes -= hours * 60;
             return hours + "hrs " + minutes + "mins " + seconds + "s";
