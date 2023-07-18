@@ -1,14 +1,19 @@
 public class project {
     public static void main(String[] args) {
+    }
 
-        for(double rate = 7.0; rate <= 10.0; rate += 0.25){
-            System.out.println(calcInterest(100,rate));
+    public static int sumDigits (int number){
+        int digit = 0;
+        if(number < 0 ){
+            return -1;
+        } else if (number <= 9){
+            return number;
+        } else{
+            while(number > 0){
+                digit += number % 10;
+                number = number / 10;
+            }
+            return digit;
         }
     }
-
-    public static double calcInterest(double principle, double rate){
-        double total = principle + principle * (rate / 100);
-        return total;
-    }
-    
 }
