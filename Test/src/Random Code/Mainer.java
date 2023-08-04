@@ -1,4 +1,4 @@
-public class Main {
+public class Mainer {
     public static void main(String[] args){
         System.out.println(secondsCalc(102, 136));
         System.out.println(secondsCalc(89403));
